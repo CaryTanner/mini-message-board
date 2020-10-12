@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+<h4> {{explainer}}</h4>
+
+<p class="mt4">{{#each messages}}
+<ul class="list-group">
+    <li class="list-group-item">{{this.user}}:  {{this.message}} <span class="text-info"><small>{{added}}</small></span></li>
+</ul>
+
+
+{{/each}}
+</p>
+<a href="/new" class="btn btn-primary">New Message</a>
